@@ -1,9 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client'; // 최신 버전 React에서는 이렇게 import합니다.
-import './index.css'; // 스타일을 적용할 CSS 파일
-import ShoppingList from './ShoppingList'; // ShoppingList 컴포넌트 import
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import './index.css';
+// import Gallery from './Gallery'; // 경로를 정확히 확인하세요
 
-const root = ReactDOM.createRoot(document.getElementById('root')); // React 18부터는 createRoot 사용
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <Gallery />
+//   </React.StrictMode>
+// );
+// src/index.js
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ShoppingList name="Mark" /> // ShoppingList 컴포넌트 렌더링
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
